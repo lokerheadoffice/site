@@ -1,0 +1,1894 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Informasi Seputar Bhinneka Indonesian Resto & Cafe Batam Menu Makanan dan Minumam Terbaik Se kota Batam">
+    <meta name="keywords" content="Bhinneka Indonesian Resto & Cafe, Recipe Menu, Cefe Di Batam, Tempat Nongkrong di Batam">
+    <meta name="author" content="Bhinneka Indonesian Resto & Cafe">
+    <title>Bhinneka Indonesian Resto & Cafe</title>
+    <link rel="icon" href="https://logo.clearbit.com/bhinneka-resto.com" type="image/x-icon">
+    <style>
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styling */
+/* Header Styling */
+header {
+    background-color: rgba(0, 0, 0, 0.7); /* Lebih gelap untuk kesan elegan */
+    color: #ffffff; /* Warna teks putih agar lebih kontras */
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Peningkatan shadow agar lebih halus */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Menambahkan vertical center untuk konten */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Animasi transisi untuk smooth effect */
+}
+
+/* Menambahkan efek hover pada header */
+header:hover {
+    background-color: rgba(0, 0, 0, 0.9); /* Efek hover untuk memberi respons lebih jelas */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow lebih kuat saat hover */
+}
+
+/* Responsif: Header dengan padding lebih kecil di layar kecil */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 0;
+    }
+}
+
+/* Styling untuk logo atau elemen lain di dalam header */
+header .header-logo {
+    max-width: 120px; /* Membatasi ukuran logo agar tetap proporsional */
+    height: auto;
+    transition: transform 0.3s ease; /* Animasi logo */
+}
+
+/* Efek hover pada logo */
+header .header-logo:hover {
+    transform: scale(1.05); /* Zoom sedikit saat hover pada logo */
+}
+
+
+
+header .logo a {
+    font-size: 2rem;
+    color: #008a8a;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 30px; /* Increased margin to add space between logo and menu */
+    animation: logoColorChange 4s infinite; /* Animation to change logo color */
+}
+
+@keyframes logoColorChange {
+    0% {
+        color: #008a8a;
+    }
+    25% {
+        color: #d9e7e7;
+    }
+    50% {
+        color: #008a8a;
+    }
+    75% {
+        color: #d9e7e7;
+    }
+    100% {
+        color: #008a8a;
+    }
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Center menu items */
+    margin-top: 0;
+    padding: 0;
+}
+
+header ul li {
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+header ul li:first-child {
+    margin-left: 0; /* Remove left margin from the first item */
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+header ul li a:hover {
+    color: #fcf403;
+}
+
+
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+    /* Hero Section */
+    .hero {
+      height: 100vh;
+      background: url('https://bhinneka-resto.com/menu/images/bhinneka-resto/carosell/bnk1.jpg') center/cover no-repeat;
+      background-attachment: fixed; /* Parallax Effect */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fcf403;
+      position: relative;
+      animation: fadeInBackground 3s ease-out;
+      transition: transform 0.3s ease; /* smooth zoom on hover */
+    }
+
+    .hero:hover {
+      transform: scale(1.05); /* Zoom effect */
+    }
+
+    /* Background Animation */
+    @keyframes fadeInBackground {
+      0% {
+        opacity: 0;
+        transform: scale(1.1);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    /* Overlay */
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.85)); /* Gradient Overlay */
+      opacity: 0;
+      animation: fadeInOverlay 1.5s ease-out 1s forwards;
+    }
+
+    @keyframes fadeInOverlay {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    /* Hero Content */
+    .hero-content {
+      z-index: 1;
+      padding: 20px;
+      color: #fcf403;
+      max-width: 80%;
+      opacity: 0;
+      animation: fadeInContent 2s ease-out 0.5s forwards;
+      transform: translateY(20px);
+    }
+
+    @keyframes fadeInContent {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Heading Animation */
+    .hero h1 {
+      font-size: 4rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      opacity: 0;
+      animation: fadeInHeading 2s ease-out 1s forwards;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* Text Shadow */
+      filter: brightness(1.2); /* Make text brighter */
+    }
+
+    @keyframes fadeInHeading {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Paragraph Animation */
+    .hero p {
+      font-size: 1.4rem;
+      margin-bottom: 30px;
+      opacity: 0.8;
+      animation: fadeInParagraph 2s ease-out 1.5s forwards;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Text Shadow */
+    }
+
+    @keyframes fadeInParagraph {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Button/CTA */
+    .cta-btn {
+      display: inline-block;
+      padding: 15px 30px;
+      background-color: #fcf403;
+      color: #333;
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Add shadow to button */
+    }
+
+    .cta-btn:hover {
+      background-color: #333;
+      color: #fcf403;
+      transform: scale(1.1); /* Hover effect */
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Hover shadow */
+    }
+
+    /* Smooth Scroll */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Scroll-In Animation */
+    .hero h1, .hero p {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    .hero h1.visible, .hero p.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+
+.cta-btn {
+    background-color: #fcba03;
+    color: #000;
+    padding: 20px 35px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #000;
+    transform: scale(1.05);
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    overflow: auto; /* Menambahkan scroll pada modal jika konten lebih panjang */
+}
+
+/* Konten Modal */
+.modal-content {
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    width: 70%;
+    max-width: 700px;
+    max-height: 80vh; /* Menentukan batas tinggi modal */
+    overflow-y: auto; /* Scroll vertikal jika konten melebihi batas */
+    border-radius: 10px;
+}
+
+/* Tombol Close */
+.close {
+    color: #FF6200;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.close:hover,
+.close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #f4fc03;
+    color: black;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+footer ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+footer ul li a:hover {
+    color: #FFF;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .cta-btn {
+        padding: 10px 30px;
+        font-size: 1.1rem;
+    }
+
+    header .logo a {
+       font-size: 2.5rem; /* Font size for tablets or medium screens */
+    }
+
+    header ul {
+        flex-direction: column;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    header ul li {
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .cta-btn {
+        padding: 10px 25px;
+        font-size: 1rem;
+    }
+
+    header .logo a {
+        font-size: 2rem; /* Font size for smaller screens */
+    }
+
+    header ul {
+        flex-direction: column;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    header ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .cta-btn {
+        padding: 8px 20px;
+        font-size: 0.9rem;
+    }
+
+    header .logo a {
+        font-size: 1.5rem; /* Font size for mobile devices */
+    }
+
+    header ul {
+        flex-direction: column;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    header ul li {
+        margin-left: 0;
+        margin-bottom: 8px;
+    }
+}
+
+
+/* Job Listings Section (Grid 3 Kolom Horizontal) */
+.job-listings {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Membuat 3 kolom dalam satu baris */
+    gap: 20px; /* Memberikan jarak antar elemen */
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.job-item {
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Pastikan gambar dalam setiap job item memiliki lebar yang tepat */
+.job-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.job-item h3 {
+    margin: 15px 0;
+    font-size: 1.5rem;
+}
+
+.job-item p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.job-item .apply-btn {
+    background-color: #FF740F;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: none;
+}
+
+.job-item .apply-btn:hover {
+    background-color: #D4600D;
+    transform: scale(1.05);
+}
+
+/* Modal for Apply Now */
+#applyModal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    width: 70%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.modal-content h2 {
+    font-size: 1.75rem;
+    margin-bottom: 15px;
+}
+
+.modal-content #modalTitle {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.modal-content #modalDescription {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+/* Close Button */
+.close {
+    color: #fcba03;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.close:hover,
+.close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .job-listings {
+        grid-template-columns: repeat(2, 1fr); /* 2 kolom pada layar lebih kecil */
+    }
+}
+
+@media (max-width: 768px) {
+    .job-listings {
+        grid-template-columns: 1fr; /* 1 kolom pada layar lebih kecil */
+    }
+}
+
+/* FAQ CSS */
+  .faq-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .faq-item {
+    background-color: #f9f9f9;
+    border-left: 5px solid #f4fc03;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .faq-item h3 {
+    font-size: 1.2rem;
+    color: #333;
+    padding: 20px;
+  }
+
+  .faq-item p {
+    font-size: 1rem;
+    color: #333;
+  }
+
+  .faq-item a {
+    color: #008a8a;
+    text-decoration: none;
+  }
+
+  .faq-item a:hover {
+    text-decoration: underline;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+
+/* Pastikan body dan elemen utama menggunakan display flex dan penuh */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;  /* Untuk memastikan tinggi 100% agar bisa vertikal center */
+}
+
+.header_logo {
+    max-width: 100%;
+    height: auto;
+}
+
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+        <div class="logo-container">
+<img width="100" height="100" src="https://www.bhinneka-resto.com/images/bhinneka-resto/bhinneka-resto.png" class="header_logo header-logo" alt="Kasflo">
+        </div>
+            <ul>
+                <li><a href="#" id="aboutBtn">About Us</a></li>
+                <li><a href="#" id="servicesBtn">Our Serices Order</a></li>
+                <li><a href="#" id="contactBtn">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Resto & Cafe</h1>
+            <p>Rasa Indonesia, Kearifan Lokal, Nikmati Kebersamaan di Bhinneka Resto & Cafe!</p>
+            <br />
+            <br />
+            <a href="#" id="applyBtn" class="cta-btn"><strong>SPECIAL MENU</strong></a>
+        </div>
+    </section>
+
+<!-- Job Listings Section (Grid 3 Kolom) -->
+<section class="job-listings">
+    <div class="job-item">
+        <img src="https://lh3.googleusercontent.com/p/AF1QipPvT_3HHaN1Tryerk5ksxaVYSEQDHnrcIlhDfAo=s202-w152-h202-k-p-no" alt="Bhinneka Indonesian Resto & Cafe" width="500" height="auto">
+        <h3>Nasi Goreng By Bhinneka Indonesian Resto & Cafe</h3>
+        <p><strong>Nasi Goreng By Bhinneka Indonesian Resto & Cafe</strong> adalah hidangan ikonik Indonesia yang penuh cita rasa. Cocok untuk segala suasana, baik sebagai hidangan utama atau menu yang mengenyangkan. Selamat menikmati!</p>
+        <br />
+        <a href="#" id="applyBtn1" class="cta-btn">DETAILS & BENEFIT</a>
+    </div>
+
+    <div class="job-item">
+        <img src="https://lh3.googleusercontent.com/p/AF1QipPk4IQRpZ40K_NU2jzfiF9us_xjXf2_3T6MsjUP=s202-w152-h202-k-p-no" alt="Nasi Liwet By Bhinneka Indonesian Resto & Cafe" alt="Mommas Breakfast Platter" width="500" height="auto">
+        <h3>Nasi Liwet By Bhinneka Indonesian Resto & Cafe</h3>
+        <p><strong>Nasi Liwet By Bhinneka Indonesian Resto & Cafe</strong> adalah hidangan yang penuh rasa, cocok untuk dinikmati bersama keluarga atau teman-teman. Dengan bumbu rempah yang khas, nasi liwet ini pasti memanjakan lidah Anda. Selamat menikmati!</p>
+        <br />
+        <a href="#" id="applyBtn2" class="cta-btn">DETAILS & BENEFIT</a>
+    </div>
+
+    <div class="job-item">
+        <img src="https://lh3.googleusercontent.com/p/AF1QipNhHinssk_0UcKgjgbxILPqmsLThW0PxDy07No=s202-w152-h202-k-p-no" alt="Nasi Bakul By Bhinneka Indonesian Resto & Cafe" width="500" itemprop="image">
+        <h3>Nasi Bakul By Bhinneka Indonesian Resto & Cafe</h3>
+        <p><strong>Nasi Bakul By Bhinneka Indonesian Resto & Cafe</strong> adalah hidangan yang memberikan nuansa tradisional dengan rasa yang autentik. Nikmati kelezatannya kapan saja, baik untuk makan siang, makan malam, atau acara bersama orang tercinta.</p>
+        <br />
+        <a href="#" id="applyBtn3" class="cta-btn">DETAILS & BENEFIT</a>
+    </div>
+
+    <div class="job-item">
+          <img src="https://lh3.googleusercontent.com/p/AF1QipNra4CdZWMzeY0oxLOjLInhkBaAnDV1hRPMCzI1=s202-w152-h202-k-p-no" alt="Bakwan Jagung By Bhinneka Indonesian Resto & Cafe" width="500" itemprop="image">
+        <h3>Bakwan Jagung By Bhinneka Indonesian Resto & Cafe</h3>
+        <p><strong>Bakwan Jagung By Bhinneka Indonesian Resto & Cafe</strong> adalah camilan lezat yang penuh rasa. Cocok untuk menemani waktu santai Anda, baik sebagai teman makan siang, atau camilan sore yang nikmat.</p>
+        <br />
+        <a href="#" id="applyBtn4" class="cta-btn">DETAILS & BENEFIT</a>
+    </div>
+
+    <div class="job-item">
+        <img src="https://lh3.googleusercontent.com/p/AF1QipP4nxhoZjl5GKQv4cEdnssReAOy6TCnHHmr6uM=s202-w152-h202-k-p-no" alt="Ayam Betutu By Bhinneka Indonesian Resto & Cafe" width="500">
+        <h3>Ayam Betutu By Bhinneka Indonesian Resto & Cafe</h3>
+        <p><strong>Ayam Betutu By Bhinneka Indonesian Resto & Cafe</strong> adalah hidangan khas Bali yang penuh dengan bumbu rempah yang kaya. Cocok dinikmati bersama keluarga atau teman-teman, menjadikannya pilihan yang sempurna untuk makan siang atau makan malam.</p>
+        <br />
+        <a href="#" id="applyBtn5" class="cta-btn">DETAILS & BENEFIT</a>
+    </div>
+
+    <div class="job-item">
+        <img src="https://lh3.googleusercontent.com/p/AF1QipMZvRVTWUdCRsInyRmpxaVu0Lx9kw_EQlWEqphd=s202-w152-h202-k-p-no" alt="Sate Maranggi By Bhinneka Indonesian Resto & Cafe">
+        <h3>Sate Maranggi By Bhinneka Indonesian Resto & Cafe</h3>
+        <p><strong>Sate Maranggi By Bhinneka Indonesian Resto & Cafe</strong> adalah hidangan khas yang penuh rasa dan kelezatan. Nikmati sate ini dengan nasi atau lontong, membuat hidangan ini sempurna untuk acara makan bersama orang tercinta.</p>
+        <br />
+        <a href="#" id="applyBtn6" class="cta-btn">DETAILS & BENEFIT</a>
+    </div>
+    <!-- Add more job items as needed -->
+</section>
+
+
+<section>
+  <h2>Orang lain juga bertanya</h2>
+
+<div itemscope itemtype="https://schema.org/FAQPage">
+    <div class="faq-container">
+
+ <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Apa itu Bhinneka Indonesian Resto & Cafe?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Bhinneka Indonesian Resto & Cafe adalah sebuah kafe yang mengkhususkan diri pada kopi spesial, dengan proses pemanggangan biji kopi (roastery) yang dilakukan di tempat. Mereka juga menawarkan berbagai menu makanan dan minuman lainnya.</p>
+    </div>
+</div>
+
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Di mana lokasi Bhinneka Indonesian Resto & Cafe?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Bhinneka Indonesian Resto & Cafe berlokasi di pusat kota, tepatnya di Jalan XYZ, Bandung. Lokasi ini mudah dijangkau dan dekat dengan berbagai fasilitas umum.</p>
+    </div>
+</div>
+
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Apa jam operasional Bhinneka Indonesian Resto & Cafe?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Bhinneka Indonesian Resto & Cafe buka setiap hari mulai pukul 08.00 pagi hingga 10.00 malam.</p>
+    </div>
+</div>
+
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Apakah Bhinneka Indonesian Resto & Cafe menerima reservasi?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Ya, Bhinneka Indonesian Resto & Cafe menerima reservasi untuk berbagai acara. Kamu bisa melakukan reservasi melalui telepon atau aplikasi online.</p>
+    </div>
+</div>
+
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Apakah ada tempat parkir di sekitar restoran?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Ya, ada tempat parkir yang cukup luas di sekitar restoran, baik untuk mobil maupun sepeda motor.</p>
+    </div>
+</div>
+
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Apakah Bhinneka Indonesian Resto & Cafe menerima pembayaran dengan kartu kredit?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Ya, Bhinneka Indonesian Resto & Cafe menerima pembayaran menggunakan kartu kredit dari berbagai bank yang bekerja sama.</p>
+    </div>
+</div>
+
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Apakah ada Wi-Fi gratis di Bhinneka Indonesian Resto & Cafe?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Ya, Bhinneka Indonesian Resto & Cafe menyediakan Wi-Fi gratis bagi pelanggan yang datang ke kafe.</p>
+    </div>
+</div>
+
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Apakah Bhinneka Indonesian Resto & Cafe menyediakan tempat untuk acara pribadi atau pertemuan bisnis?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Ya, restoran ini menyediakan ruang khusus untuk acara pribadi atau pertemuan bisnis. Ruangan ini dapat disewa sesuai dengan kebutuhan pelanggan.</p>
+    </div>
+</div>
+
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Apakah restoran ini ramah untuk anak-anak?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Ya, Bhinneka Indonesian Resto & Cafe ramah untuk anak-anak. Tersedia menu anak dan fasilitas yang mendukung kenyamanan keluarga.</p>
+    </div>
+</div>
+
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Apa yang membuat Bhinneka Indonesian Resto & Cafe berbeda dari restoran Indonesia lainnya?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Bhinneka Indonesian Resto & Cafe menawarkan pengalaman unik dengan menggabungkan kopi spesial yang diproses langsung di tempat dan menu masakan Indonesia yang autentik, semuanya dalam suasana yang nyaman dan modern.</p>
+    </div>
+</div>
+
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Apa saja menu andalan di Bhinneka Indonesian Resto & Cafe?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Menu andalan di Bhinneka Indonesian Resto & Cafe antara lain nasi goreng khas, sate ayam, dan mie goreng dengan sambal matah. Selain itu, mereka juga memiliki varian kopi spesial yang sangat digemari pelanggan.</p>
+    </div>
+</div>
+
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Apakah Bhinneka Indonesian Resto & Cafe menyediakan menu vegetarian atau vegan?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Ya, Bhinneka Indonesian Resto & Cafe menyediakan berbagai pilihan menu vegetarian dan vegan, seperti sayur lodeh, tempe mendoan, dan nasi uduk tanpa bahan hewani.</p>
+    </div>
+</div>
+
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Apakah semua bahan makanan di Bhinneka Indonesian Resto & Cafe menggunakan bahan lokal?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Sebagian besar bahan makanan di Bhinneka Indonesian Resto & Cafe berasal dari petani dan pemasok lokal untuk mendukung keberlanjutan dan memastikan kesegaran bahan yang digunakan dalam menu mereka.</p>
+    </div>
+</div>
+
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Apakah restoran ini menyediakan menu bebas gluten?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Ya, Bhinneka Indonesian Resto & Cafe menawarkan pilihan menu bebas gluten seperti nasi timbel dan beberapa jenis lauk pauk yang tidak mengandung gluten.</p>
+    </div>
+</div>
+
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Bagaimana cara memesan makanan untuk dibawa pulang (take away)?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Untuk memesan makanan take away, kamu bisa langsung datang ke restoran dan melakukan pemesanan di kasir atau melakukan pemesanan melalui aplikasi delivery yang bekerja sama dengan restoran ini.</p>
+    </div>
+</div>
+
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Apakah ada pilihan menu untuk orang dengan alergi makanan?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Bhinneka Indonesian Resto & Cafe dapat menyediakan pilihan menu yang disesuaikan dengan kebutuhan alergi makanan, seperti menu bebas kacang, bebas gluten, atau rendah garam. Pastikan untuk memberi tahu staf mengenai alergi makanan saat memesan.</p>
+    </div>
+</div>
+
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Apakah Bhinneka Indonesian Resto & Cafe menyediakan menu untuk diet rendah kalori?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Ya, restoran ini menyediakan beberapa pilihan menu untuk diet rendah kalori, seperti salad sayuran segar, ayam panggang tanpa kulit, dan sup rendah kalori.</p>
+    </div>
+</div>
+
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Apa minuman khas yang disarankan di Bhinneka Indonesian Resto & Cafe?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Minuman khas yang disarankan di Bhinneka Indonesian Resto & Cafe adalah kopi spesial mereka yang dipanggang langsung di tempat, serta es kelapa muda segar yang sangat cocok dinikmati dengan makanan Indonesia.</p>
+    </div>
+</div>
+
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Apakah ada menu spesial di Bhinneka Indonesian Resto & Cafe untuk acara tertentu atau musim?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Ya, restoran ini menyediakan menu spesial saat acara tertentu seperti Hari Raya Idul Fitri, Natal, atau Tahun Baru. Menu spesial ini sering kali mencakup hidangan musiman yang hanya tersedia pada waktu tertentu.</p>
+    </div>
+</div>
+
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Apakah Bhinneka Indonesian Resto & Cafe menyediakan makanan penutup (dessert)?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Ya, Bhinneka Indonesian Resto & Cafe menyediakan berbagai pilihan makanan penutup seperti klepon, es cendol, dan lapis legit yang menjadi favorit banyak pelanggan.</p>
+    </div>
+</div>
+
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Apakah Bhinneka Indonesian Resto & Cafe menerima layanan pesan antar (delivery)?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Ya, Bhinneka Indonesian Resto & Cafe menyediakan layanan pesan antar melalui berbagai aplikasi delivery yang bekerja sama dengan restoran ini.</p>
+    </div>
+</div>
+
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Apakah Bhinneka Indonesian Resto & Cafe menyediakan layanan catering untuk acara?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Ya, restoran ini menyediakan layanan catering untuk berbagai acara, seperti pertemuan bisnis, perayaan ulang tahun, atau acara keluarga. Kamu bisa menghubungi restoran untuk detail pemesanan catering.</p>
+    </div>
+</div>
+
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Apakah restoran ini menyediakan tempat khusus merokok?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Ya, Bhinneka Indonesian Resto & Cafe menyediakan area merokok terpisah untuk pengunjung yang ingin merokok dengan nyaman tanpa mengganggu pengunjung lainnya.</p>
+    </div>
+</div>
+
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Apakah ada live music atau hiburan di Bhinneka Indonesian Resto & Cafe?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Ya, Bhinneka Indonesian Resto & Cafe sering mengadakan live music pada akhir pekan untuk menciptakan suasana yang lebih hidup dan menyenangkan bagi para pengunjung.</p>
+    </div>
+</div>
+
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Apakah Bhinneka Indonesian Resto & Cafe memiliki ruang VIP?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Ya, restoran ini memiliki ruang VIP yang dapat disewa untuk acara pribadi atau pertemuan bisnis, dengan fasilitas yang lebih eksklusif dan privat.</p>
+    </div>
+</div>
+
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Apakah ada acara khusus atau diskon pada hari-hari tertentu?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Ya, Bhinneka Indonesian Resto & Cafe menawarkan diskon khusus atau acara tematik pada hari-hari tertentu, seperti diskon untuk pelanggan setia pada hari ulang tahun atau promosi pada hari libur nasional.</p>
+    </div>
+</div>
+
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Apakah restoran ini ramah dengan hewan peliharaan (pet-friendly)?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Ya, Bhinneka Indonesian Resto & Cafe adalah restoran pet-friendly. Pengunjung yang membawa hewan peliharaan dapat menikmati waktu bersama hewan peliharaan mereka di area luar ruangan.</p>
+    </div>
+</div>
+
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Apakah ada layanan pemesanan online di Bhinneka Indonesian Resto & Cafe?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Ya, kamu bisa melakukan pemesanan online melalui aplikasi delivery atau situs web restoran untuk memesan makanan atau minuman favoritmu.</p>
+    </div>
+</div>
+
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Apakah Bhinneka Indonesian Resto & Cafe memiliki area luar ruangan (outdoor)?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Ya, restoran ini memiliki area luar ruangan yang nyaman, cocok untuk pengunjung yang ingin menikmati hidangan mereka sambil merasakan udara segar.</p>
+    </div>
+</div>
+
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Apakah restoran ini dapat menampung tamu dalam jumlah besar?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Ya, Bhinneka Indonesian Resto & Cafe dapat menampung tamu dalam jumlah besar, baik untuk acara pertemuan, makan bersama keluarga besar, atau acara perusahaan. Tempat ini dapat disesuaikan dengan kebutuhan grup besar.</p>
+    </div>
+</div>
+
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Bagaimana cara melakukan reservasi di Bhinneka Indonesian Resto & Cafe?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Untuk melakukan reservasi di Bhinneka Indonesian Resto & Cafe, kamu bisa menghubungi restoran melalui telepon, email, atau aplikasi pemesanan online. Reservasi juga bisa dilakukan langsung di situs web restoran.</p>
+    </div>
+</div>
+
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Apakah saya perlu membayar uang muka untuk reservasi?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Tergantung pada jenis acara yang akan kamu gelar, beberapa reservasi mungkin memerlukan uang muka sebagai jaminan, terutama untuk acara besar atau khusus. Pastikan untuk menanyakan detailnya saat melakukan reservasi.</p>
+    </div>
+</div>
+
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Apa yang harus dilakukan jika saya ingin membatalkan reservasi?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Jika kamu perlu membatalkan reservasi, kamu bisa menghubungi restoran sesegera mungkin melalui telepon atau email. Kebijakan pembatalan dapat berbeda, jadi pastikan untuk mengecek syarat dan ketentuan saat melakukan reservasi.</p>
+    </div>
+</div>
+
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Apakah saya bisa memilih tempat duduk saat melakukan reservasi?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Ya, kamu dapat memilih tempat duduk saat melakukan reservasi, baik itu di area dalam ruangan atau luar ruangan. Namun, pilihan tempat duduk bisa bergantung pada ketersediaan pada saat reservasi dilakukan.</p>
+    </div>
+</div>
+
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Apakah ada potongan harga untuk pemesanan grup atau acara besar?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Bhinneka Indonesian Resto & Cafe sering menawarkan potongan harga atau paket spesial untuk pemesanan grup atau acara besar. Kamu bisa menghubungi restoran untuk mengetahui detailnya dan mendapatkan penawaran khusus.</p>
+    </div>
+</div>
+
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Apakah Bhinneka Indonesian Resto & Cafe menerima reservasi untuk acara pernikahan atau ulang tahun?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Ya, Bhinneka Indonesian Resto & Cafe menerima reservasi untuk acara pernikahan, ulang tahun, dan acara spesial lainnya. Restoran ini memiliki fasilitas yang dapat disesuaikan dengan kebutuhan acara tersebut.</p>
+    </div>
+</div>
+
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Bagaimana cara memesan menu khusus untuk acara tertentu?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Untuk memesan menu khusus untuk acara tertentu, kamu dapat menghubungi restoran sebelumnya dan mendiskusikan pilihan menu yang sesuai dengan tema atau kebutuhan acara tersebut.</p>
+    </div>
+</div>
+
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Apa yang harus saya lakukan jika saya tidak puas dengan makanan atau pelayanan?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Jika kamu tidak puas dengan makanan atau pelayanan, segera beri tahu staf restoran agar masalah tersebut bisa segera diselesaikan. Bhinneka Indonesian Resto & Cafe berkomitmen untuk memberikan pelayanan terbaik kepada pelanggan.</p>
+    </div>
+</div>
+
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Apakah Bhinneka Indonesian Resto & Cafe menyediakan layanan untuk pelanggan dengan kebutuhan khusus?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Ya, restoran ini menyediakan fasilitas untuk pelanggan dengan kebutuhan khusus, seperti akses kursi roda dan menu yang disesuaikan dengan diet atau alergi tertentu. Pastikan untuk memberitahukan kebutuhan khusus saat melakukan reservasi.</p>
+    </div>
+</div>
+
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Bagaimana kualitas pelayanan di Bhinneka Indonesian Resto & Cafe?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Pelayanan di Bhinneka Indonesian Resto & Cafe sangat diperhatikan. Staf yang ramah dan profesional siap memberikan pelayanan terbaik untuk memastikan pengalaman makan yang menyenangkan bagi semua pengunjung.</p>
+    </div>
+</div>
+
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Apa yang dimaksud dengan konsep 'Bhinneka' dalam restoran ini?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Konsep 'Bhinneka' di restoran ini merujuk pada keberagaman budaya dan cita rasa Indonesia yang ditawarkan. Restoran ini berfokus pada penyajian hidangan khas Indonesia dengan pendekatan modern namun tetap mempertahankan keaslian rasa.</p>
+    </div>
+</div>
+
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Apakah restoran ini memiliki sistem pemesanan melalui aplikasi?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Ya, Bhinneka Indonesian Resto & Cafe memiliki sistem pemesanan melalui aplikasi untuk memudahkan pelanggan dalam melakukan pemesanan, baik untuk makan di tempat maupun take away.</p>
+    </div>
+</div>
+
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Apakah ada layanan antar makanan ke hotel atau tempat penginapan terdekat?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Ya, Bhinneka Indonesian Resto & Cafe menyediakan layanan antar makanan ke hotel atau tempat penginapan terdekat melalui aplikasi delivery atau langsung dari restoran.</p>
+    </div>
+</div>
+
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Apakah ada diskon atau promo spesial di Bhinneka Indonesian Resto & Cafe?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Ya, Bhinneka Indonesian Resto & Cafe sering menawarkan diskon atau promo spesial, terutama pada hari-hari tertentu atau untuk acara tertentu. Pastikan untuk memeriksa media sosial restoran atau bertanya langsung ke staf untuk mendapatkan informasi terbaru.</p>
+    </div>
+</div>
+
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Apakah saya bisa menggunakan voucher atau kupon diskon di restoran ini?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Ya, kamu bisa menggunakan voucher atau kupon diskon di Bhinneka Indonesian Resto & Cafe, asalkan sesuai dengan syarat dan ketentuan yang berlaku. Pastikan untuk menunjukkan kupon atau voucher sebelum melakukan pembayaran.</p>
+    </div>
+</div>
+
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Bagaimana cara mendapatkan informasi tentang promo atau diskon yang sedang berlangsung?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Untuk mendapatkan informasi tentang promo atau diskon yang sedang berlangsung, kamu bisa mengikuti akun media sosial resmi Bhinneka Indonesian Resto & Cafe atau mendaftar untuk menerima newsletter melalui situs web mereka.</p>
+    </div>
+</div>
+
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Apakah ada program loyalitas atau keanggotaan di Bhinneka Indonesian Resto & Cafe?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Ya, Bhinneka Indonesian Resto & Cafe memiliki program loyalitas untuk pelanggan setia. Program ini memberikan berbagai keuntungan seperti diskon khusus, hadiah, dan promosi eksklusif bagi anggota.</p>
+    </div>
+</div>
+
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Apakah ada diskon untuk pelanggan yang datang lebih awal atau di jam-jam tertentu?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Beberapa waktu tertentu, Bhinneka Indonesian Resto & Cafe menawarkan diskon atau promo spesial untuk pelanggan yang datang lebih awal atau pada jam-jam tertentu, seperti happy hour. Pastikan untuk menanyakan ke staf mengenai promo ini.</p>
+    </div>
+</div>
+
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Apakah Bhinneka Indonesian Resto & Cafe memberikan diskon untuk pelanggan ulang tahun?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Ya, Bhinneka Indonesian Resto & Cafe memberikan diskon atau potongan harga khusus untuk pelanggan yang merayakan ulang tahun. Pastikan untuk menginformasikan tanggal ulang tahun saat melakukan reservasi atau pemesanan.</p>
+    </div>
+</div>
+
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Apakah ada potongan harga khusus untuk mahasiswa atau pelajar?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Bhinneka Indonesian Resto & Cafe menawarkan potongan harga khusus untuk mahasiswa atau pelajar dengan menunjukkan kartu identitas pelajar yang sah. Pastikan untuk menanyakan tentang promo ini saat datang.</p>
+    </div>
+</div>
+
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Apakah Bhinneka Indonesian Resto & Cafe memiliki kebijakan pembatalan?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Ya, Bhinneka Indonesian Resto & Cafe memiliki kebijakan pembatalan yang mengharuskan pelanggan untuk membatalkan reservasi atau pesanan dalam jangka waktu tertentu sebelum acara atau kedatangan yang dijadwalkan. Pastikan untuk mengecek kebijakan pembatalan saat melakukan reservasi.</p>
+    </div>
+</div>
+
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Apakah saya bisa mengganti menu setelah memesan?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Jika kamu ingin mengganti menu setelah memesan, segera beri tahu staf restoran. Penggantian menu mungkin dapat dilakukan tergantung pada kondisi pesanan yang telah dimasak atau disiapkan.</p>
+    </div>
+</div>
+
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Apakah Bhinneka Indonesian Resto & Cafe menyediakan layanan untuk orang dengan disabilitas?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Ya, Bhinneka Indonesian Resto & Cafe menyediakan fasilitas yang ramah untuk pengunjung dengan disabilitas, termasuk akses kursi roda dan ruang yang mudah diakses. Pastikan untuk memberi tahu staf jika kamu membutuhkan bantuan khusus.</p>
+    </div>
+</div>
+
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Apakah ada batasan umur untuk makan di restoran ini?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Tidak ada batasan umur untuk makan di Bhinneka Indonesian Resto & Cafe. Semua pengunjung, baik anak-anak maupun dewasa, dipersilakan menikmati hidangan di restoran ini.</p>
+    </div>
+</div>
+
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Bagaimana jika saya memiliki keluhan terkait makanan atau layanan?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Jika kamu memiliki keluhan terkait makanan atau layanan, segera beri tahu staf restoran agar masalah dapat segera ditangani. Bhinneka Indonesian Resto & Cafe berkomitmen untuk memastikan setiap pelanggan merasa puas dengan layanan yang diberikan.</p>
+    </div>
+</div>
+
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Apakah ada kebijakan khusus terkait penggunaan masker atau protokol kesehatan di restoran?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Bhinneka Indonesian Resto & Cafe mengikuti protokol kesehatan yang berlaku, termasuk penggunaan masker untuk staf dan pelanggan, serta penerapan jaga jarak. Kebijakan ini dapat berubah sesuai dengan pedoman kesehatan yang berlaku.</p>
+    </div>
+</div>
+
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Apakah Bhinneka Indonesian Resto & Cafe menerima pesanan dengan metode pembayaran cicilan?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Bhinneka Indonesian Resto & Cafe menerima pembayaran dengan cicilan melalui berbagai metode pembayaran yang mendukung cicilan. Pastikan untuk memeriksa detail pembayaran sebelum melakukan transaksi.</p>
+    </div>
+</div>
+
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Apa kebijakan mengenai penggunaan telepon genggam di dalam restoran?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Penggunaan telepon genggam di dalam restoran diperbolehkan, namun diharapkan untuk tidak mengganggu kenyamanan pengunjung lainnya, terutama saat makan bersama. Pengunjung diminta untuk menjaga suasana tenang di area makan.</p>
+    </div>
+</div>
+
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Apakah Bhinneka Indonesian Resto & Cafe menyediakan layanan untuk pengunjung dengan alergi makanan tertentu?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Ya, Bhinneka Indonesian Resto & Cafe dapat menyesuaikan menu untuk pengunjung dengan alergi makanan tertentu. Pastikan untuk memberi tahu staf restoran tentang alergi yang kamu miliki saat memesan makanan.</p>
+    </div>
+</div>
+
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Apakah Bhinneka Indonesian Resto & Cafe memiliki kebijakan pengembalian atau penggantian makanan?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">Jika kamu tidak puas dengan makanan yang disajikan, beri tahu staf restoran. Bhinneka Indonesian Resto & Cafe berusaha untuk memberikan penggantian atau pengembalian sesuai dengan kebijakan mereka.</p>
+    </div>
+</div>
+
+    </div>
+</div>
+
+</section>
+
+
+<!-- Footer -->
+    <footer>
+        <ul>
+            <li><a href="#" id="aboutFooterBtn">About Us</a></li>
+            <li><a href="#" id="privacyFooterBtn">Privacy Policy</a></li>
+            <li><a href="#" id="termsFooterBtn">Terms & Conditions</a></li>
+        </ul>
+        <p>&copy; 2025 Bhinneka Indonesian Resto & Cafe</p>
+</footer>
+
+<!-- Modal for About Us -->
+    <div id="modal-about" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+<h2>About Us</h2>
+<p><strong>Bhinneka Indonesian Resto & Cafe Batam:</strong> Menyajikan Kuliner Lezat dengan Suasana Santai dan Ramah Keluarga</p>
+
+<p><strong>Bhinneka Indonesian Resto & Cafe</strong> adalah destinasi kuliner yang menyajikan berbagai hidangan khas Indonesia dan internasional dengan suasana yang nyaman dan ramah untuk keluarga. Terletak di <strong>Limindo Trade Center 2 Blok A No.13-14 Batam Center, Jl. Bakal, Batam City, Riau Islands 29444</strong>, kafe ini menawarkan pengalaman makan yang menyenangkan dengan menu berkualitas dan berbagai pilihan layanan.</p>
+
+<br/>
+
+<p><strong>Kenapa Harus ke Bhinneka Indonesian Resto & Cafe?</strong></p>
+<p>🍽️ <strong>Menu Variatif untuk Semua</strong> – Tersedia berbagai pilihan menu yang cocok untuk semua kalangan, termasuk menu anak-anak. <br/>
+🐕 <strong>Pet-Friendly Area</strong> – Kafe ini menyediakan area luar ruangan yang ramah untuk hewan peliharaan, sehingga kamu bisa menikmati waktu bersama teman berbulu. <br/>
+🍃 <strong>Outdoor Seating</strong> – Nikmati udara segar sambil bersantap di area luar ruangan yang nyaman dan teduh. <br/>
+👨‍👩‍👧‍👦 <strong>Ramah Keluarga</strong> – Bhinneka Indonesian Resto & Cafe juga memiliki menu spesial untuk anak-anak, menjadikannya tempat yang ideal untuk keluarga. </p>
+
+<br/>
+
+<p><strong>Lokasi dan Jam Operasional:</strong></p>
+<p>📍 <strong>Alamat:</strong> Limindo Trade Center 2 Blok A No.13-14, Batam Center, Jl. Bakal, Batam City, Riau Islands 29444 <br/>
+⏰ <strong>Jam Buka:</strong> Setiap hari, pukul 08.00 – 22.00</p>
+
+<br/>
+
+<p><strong>Hubungi & Kunjungi Bhinneka Indonesian Resto & Cafe:</strong></p>
+<p>📞 <strong>Telepon:</strong> 0812-6648-4745</p>
+
+<br/>
+
+<p><strong>Nikmati pengalaman kuliner terbaik di Bhinneka Indonesian Resto & Cafe Batam! 🍴🌿</strong></p>
+        </div>
+    </div>
+
+
+<!-- Modal for Our Services -->
+<div id="modal-services" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Our Services</h2>
+
+        <p><strong>Bhinneka Indonesian Resto & Cafe</strong> offers a variety of convenient dining and food delivery services to suit your preferences. Whether you’re looking to enjoy your meal in-house or in the comfort of your home, we’ve got you covered. Here are the services we provide:</p>
+
+        <h3>1. Dine In & Take Away</h3>
+        <p>Enjoy a cozy and comfortable dining experience at our restaurant, or take your favorite meals to go. Our menu is available for both dine-in and take-away, so you can enjoy Bhinneka Indonesian Resto & Cafe anywhere!</p>
+
+        <h3>2. Delivery</h3>
+        <p>We offer delivery services directly to your home or office. You can enjoy our delicious meals without leaving your location. Call us directly at <strong>0812-6648-4745</strong> to place your order, and we will deliver it to you.</p>
+
+        <h3>3. Online Apps</h3>
+        <p>Order your food quickly and conveniently through our online platforms. We offer a seamless experience through our website and mobile apps, allowing you to browse the menu, place your order, and track your delivery in real time.</p>
+
+        <h3>4. GoFood</h3>
+        <p>Order through GoFood for fast and easy delivery from <strong>Bhinneka Indonesian Resto & Cafe</strong>. GoFood offers a reliable and efficient way to have your meals delivered to your doorstep. Simply search for our restaurant on the GoJek app, and start ordering!</p>
+
+        <h3>5. GrabFood</h3>
+        <p>Get your favorite meals from <strong>Bhinneka Indonesian Resto & Cafe</strong> delivered by GrabFood. Just log in to the Grab app, search for our restaurant, and order your favorite dishes to be delivered straight to you!</p>
+
+        <h3>6. Shopee Food</h3>
+        <p>For our Shopee users, you can enjoy our delicious meals via Shopee Food. Simply open the Shopee app, browse through our menu, and get your food delivered right to your door with ease!</p>
+
+        <h3>Contact Information</h3>
+        <p>If you need assistance with placing an order or have any questions, feel free to contact us:</p>
+        <p>📞 <strong>Phone:</strong> 0812-6648-4745</p>
+    </div>
+</div>
+
+
+<!-- Modal for Contact Us -->
+    <div id="modal-contact" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+<h2>Contact Us</h2>
+<p><strong>Bhinneka Indonesian Resto & Cafe</strong> menyambut kamu untuk bertanya atau memberikan masukan. Jangan ragu untuk menghubungi kami melalui berbagai saluran yang tersedia di bawah ini.</p>
+
+<br/>
+
+<p><strong>Hubungi Kami:</strong></p>
+<p>📞 <strong>Telepon:</strong> 0812-6648-4745 <br/>
+📧 <strong>Email:</strong> info@bhinnekaindonesianresto.com <br/>
+🌐 <strong>Website:</strong> <a href="https://www.bhinnekaindonesianresto.com">www.bhinnekaindonesianresto.com</a> <br/>
+📸 <strong>Instagram:</strong> <a href="https://www.instagram.com/bhinnekaindonesianresto">@bhinnekaindonesianresto</a></p>
+
+<br/>
+
+<p><strong>Alamat:</strong></p>
+<p>📍 Limindo Trade Center 2 Blok A No.13-14, Batam Center, Jl. Bakal, Batam City, Riau Islands 29444</p>
+
+<br/>
+
+<p><strong>Jam Operasional:</strong></p>
+<p>⏰ Setiap hari, pukul 08.00 – 22.00</p>
+
+<br/>
+
+<p>Jangan ragu untuk menghubungi kami untuk informasi lebih lanjut atau pertanyaan lainnya. Kami siap melayani dengan senang hati! 😊</p>
+        </div>
+    </div>
+
+
+
+<!-- Modal for Footer About Us -->
+    <div id="modal-footer-about" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+<h2>About Us</h2>
+<p><strong>Bhinneka Indonesian Resto & Cafe</strong> adalah destinasi kuliner yang menyajikan berbagai hidangan khas Indonesia dan internasional dengan suasana yang nyaman dan ramah untuk keluarga. Terletak di <strong>Limindo Trade Center 2 Blok A No.13-14 Batam Center, Jl. Bakal, Batam City, Riau Islands 29444</strong>, kafe ini menawarkan pengalaman makan yang menyenangkan dengan menu berkualitas dan berbagai pilihan layanan.</p>
+<br />
+<p><strong>Bhinneka Indonesian Resto & Cafe Batam:</strong> Menyajikan Kuliner Lezat dengan Suasana Santai dan Ramah Keluarga</p>
+    </div>
+</div>
+
+
+<!-- Modal for Privacy Policy -->
+    <div id="modal-footer-privacy" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+<h2>Privacy Policy</h2>
+
+<p>Welcome to <strong>Bhinneka Indonesian Resto & Cafe</strong>. This Privacy Policy outlines how we collect, use, and protect your personal information when you visit our website, make a reservation, or interact with us in any way.</p>
+
+<h3>1. Information We Collect</h3>
+<p>We collect personal information when you:</p>
+<ul>
+    <li>Make a reservation or place an order through our website.</li>
+    <li>Subscribe to our newsletter or promotional emails.</li>
+    <li>Contact us via phone, email, or social media platforms.</li>
+    <li>Use our website or interact with our digital platforms.</li>
+</ul>
+
+<p>The types of personal information we may collect include:</p>
+<ul>
+    <li><strong>Contact Information:</strong> Name, phone number, email address, and mailing address.</li>
+    <li><strong>Payment Information:</strong> Credit card details, billing address, and payment history.</li>
+    <li><strong>Usage Data:</strong> Information on how you interact with our website and services (cookies, IP addresses, browsing data).</li>
+    <li><strong>Feedback:</strong> Information you provide when submitting reviews, comments, or inquiries.</li>
+</ul>
+
+<h3>2. How We Use Your Information</h3>
+<p>The information we collect is used to:</p>
+<ul>
+    <li>Process and manage your reservations, orders, and inquiries.</li>
+    <li>Send you promotional offers, newsletters, and updates (with your consent).</li>
+    <li>Improve our services and customer experience based on your feedback.</li>
+    <li>Handle payments, refunds, and billing for services.</li>
+    <li>Communicate with you about any changes or updates to our restaurant services.</li>
+    <li>Comply with legal obligations or resolve disputes, if necessary.</li>
+</ul>
+
+<h3>3. Data Protection and Security</h3>
+<p>We take the privacy and security of your personal information seriously. We implement appropriate technical and organizational measures to safeguard your data, including:</p>
+<ul>
+    <li>Encryption of sensitive data, such as payment details.</li>
+    <li>Restricted access to personal information for authorized personnel only.</li>
+    <li>Regular security audits and updates to protect our systems from vulnerabilities.</li>
+</ul>
+<p>While we strive to protect your personal information, please be aware that no method of transmission over the internet or electronic storage is 100% secure, and we cannot guarantee absolute security.</p>
+
+<h3>4. Sharing Your Information</h3>
+<p>We do not sell or rent your personal information to third parties. However, we may share your information with trusted partners under the following circumstances:</p>
+<ul>
+    <li><strong>Service Providers:</strong> We may share data with third-party service providers who help us with operations such as payment processing, customer support, or marketing.</li>
+    <li><strong>Legal Requirements:</strong> We may disclose your information if required by law, such as to comply with a subpoena, legal process, or government request.</li>
+    <li><strong>Business Transfers:</strong> In the event of a merger, acquisition, or sale of our business, your information may be transferred as part of the transaction.</li>
+</ul>
+
+<h3>5. Your Rights and Choices</h3>
+<p>You have certain rights regarding the personal information we collect about you. These include:</p>
+<ul>
+    <li><strong>Access:</strong> You can request a copy of the personal information we have on file for you.</li>
+    <li><strong>Correction:</strong> If you believe any information we have about you is inaccurate, you can request corrections.</li>
+    <li><strong>Deletion:</strong> You can request that we delete your personal information, subject to applicable legal limitations.</li>
+    <li><strong>Opt-Out:</strong> You can opt out of receiving marketing communications by unsubscribing from our emails or contacting us directly.</li>
+    <li><strong>Withdraw Consent:</strong> If we rely on your consent to process data, you have the right to withdraw that consent at any time.</li>
+</ul>
+
+<h3>6. Cookies and Tracking Technologies</h3>
+<p>Our website uses cookies and similar tracking technologies to enhance your browsing experience. These technologies allow us to:</p>
+<ul>
+    <li>Remember your preferences and settings for a more personalized experience.</li>
+    <li>Analyze website traffic and trends to improve our services.</li>
+    <li>Provide targeted advertising based on your interests.</li>
+</ul>
+<p>You can manage your cookie preferences through your browser settings. However, disabling cookies may affect the functionality of certain parts of our website.</p>
+
+<h3>7. Links to Third-Party Websites</h3>
+<p>Our website may contain links to third-party websites. Please note that this Privacy Policy only applies to <strong>Bhinneka Indonesian Resto & Cafe</strong> and our website. We are not responsible for the privacy practices or content of external sites. We encourage you to review the privacy policies of any third-party websites you visit.</p>
+
+<h3>8. Changes to This Privacy Policy</h3>
+<p>We may update this Privacy Policy from time to time to reflect changes in our practices, services, or legal requirements. Any updates will be posted on this page with the effective date at the top. We encourage you to review this policy periodically.</p>
+
+<h3>9. Contact Us</h3>
+<p>If you have any questions, concerns, or requests regarding this Privacy Policy or your personal information, please contact us:</p>
+<p>📞 <strong>Telepon:</strong> 0812-6648-4745 <br/>
+📧 <strong>Email:</strong> privacy@bhinnekaindonesianresto.com <br/>
+🌐 <strong>Website:</strong> <a href="https://www.bhinnekaindonesianresto.com">www.bhinnekaindonesianresto.com</a> <br/>
+📸 <strong>Instagram:</strong> <a href="https://www.instagram.com/bhinnekaindonesianresto">@bhinnekaindonesianresto</a></p>
+
+<p>Effective Date: [08 Maret 2025]</p>
+        </div>
+    </div>
+
+
+<!-- Modal for Terms & Conditions -->
+    <div id="modal-footer-terms" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+<h2>Terms & Conditions</h2>
+
+<p>Welcome to <strong>Bhinneka Indonesian Resto & Cafe</strong>. By accessing or using our website, making a reservation, or interacting with us, you agree to comply with and be bound by the following Terms and Conditions. Please read these terms carefully before using our services.</p>
+
+<h3>1. Acceptance of Terms</h3>
+<p>By using our website, services, or making any transaction with us, you agree to these Terms and Conditions. If you do not agree with any of these terms, you should refrain from using our website and services.</p>
+
+<h3>2. Modifications to Terms</h3>
+<p>We reserve the right to modify, update, or change these Terms and Conditions at any time. Any changes will be posted on this page with the updated effective date. It is your responsibility to review these terms regularly to stay informed of any changes. By continuing to use our services, you accept and agree to the updated terms.</p>
+
+<h3>3. Use of Our Website</h3>
+<p>You are responsible for ensuring that any information you provide to us is accurate and up to date. You agree to use our website and services for lawful purposes only, and not to engage in any activity that may damage, disable, or impair our website or interfere with any other party’s use of the website.</p>
+
+<h3>4. Account Creation and Security</h3>
+<p>If you create an account with us, you are responsible for maintaining the confidentiality of your account information, including your username and password. You agree to notify us immediately of any unauthorized use of your account or any security breach related to your account.</p>
+
+<h3>5. Reservations and Orders</h3>
+<p>When you make a reservation or order food and beverages through our website, you agree to provide accurate and complete information. We reserve the right to refuse service or cancel any reservation or order if we suspect fraudulent activity or violation of our Terms and Conditions.</p>
+
+<h3>6. Payment Terms</h3>
+<p>All orders and reservations are subject to payment terms. Payments must be made via the payment methods accepted on our website. You agree to provide valid and accurate payment information when making a reservation or placing an order. In case of non-payment or failed payment transactions, we reserve the right to cancel or suspend your reservation or order.</p>
+
+<h3>7. Cancellation and Refunds</h3>
+<p>If you wish to cancel a reservation or order, you must do so in accordance with our cancellation policy. In some cases, a cancellation fee may apply. Refunds, if applicable, will be processed according to our refund policy, and may be subject to deductions or conditions depending on the nature of the cancellation.</p>
+
+<h3>8. Privacy and Data Protection</h3>
+<p>We value your privacy and are committed to protecting your personal data. For more information on how we collect, use, and protect your information, please review our <a href="#modal-privacy-policy">Privacy Policy</a>. By using our website and services, you consent to the collection and use of your data in accordance with our Privacy Policy.</p>
+
+<h3>9. User Content</h3>
+<p>By submitting any content, such as reviews, comments, or feedback, to our website, you grant us a non-exclusive, royalty-free license to use, display, and distribute that content for promotional and operational purposes. You are solely responsible for the content you submit and agree not to submit any content that is unlawful, offensive, or violates the rights of others.</p>
+
+<h3>10. Prohibited Activities</h3>
+<p>You agree not to engage in any of the following prohibited activities:</p>
+<ul>
+    <li>Using our website for illegal, harmful, or unlawful purposes.</li>
+    <li>Attempting to gain unauthorized access to our systems or other users' accounts.</li>
+    <li>Submitting false or misleading information or impersonating others.</li>
+    <li>Interfering with the operation of our website or services.</li>
+    <li>Posting content that violates the rights of others or is defamatory, discriminatory, or offensive.</li>
+</ul>
+
+<h3>11. Limitation of Liability</h3>
+<p>To the fullest extent permitted by law, <strong>Bhinneka Indonesian Resto & Cafe</strong> shall not be liable for any direct, indirect, incidental, special, or consequential damages, including but not limited to loss of profits, data, or business opportunities, arising out of or in connection with your use of our website, services, or products.</p>
+
+<h3>12. Indemnification</h3>
+<p>You agree to indemnify, defend, and hold harmless <strong>Bhinneka Indonesian Resto & Cafe</strong>, its affiliates, officers, directors, employees, and agents from any claims, damages, liabilities, and expenses (including legal fees) arising out of your violation of these Terms and Conditions or your use of our website and services.</p>
+
+<h3>13. Third-Party Links</h3>
+<p>Our website may contain links to third-party websites that are not controlled or operated by us. We are not responsible for the content, policies, or practices of these third-party sites. We encourage you to review the terms and privacy policies of any third-party websites you visit.</p>
+
+<h3>14. Governing Law and Dispute Resolution</h3>
+<p>These Terms and Conditions shall be governed by and construed in accordance with the laws of Indonesia. Any dispute arising out of or in connection with these terms shall be subject to the exclusive jurisdiction of the courts in Batam, Indonesia.</p>
+
+<h3>15. Termination</h3>
+<p>We reserve the right to suspend or terminate your access to our website or services at any time, without notice, if we believe you have violated any of these Terms and Conditions.</p>
+
+<h3>16. Contact Information</h3>
+<p>If you have any questions or concerns about these Terms and Conditions, please contact us:</p>
+<p>📞 <strong>Telepon:</strong> 0812-6648-4745 <br/>
+📧 <strong>Email:</strong> info@bhinnekaindonesianresto.com <br/>
+🌐 <strong>Website:</strong> <a href="https://www.bhinnekaindonesianresto.com">www.bhinnekaindonesianresto.com</a> <br/>
+📸 <strong>Instagram:</strong> <a href="https://www.instagram.com/bhinnekaindonesianresto">@bhinnekaindonesianresto</a></p>
+
+<p>Effective Date: [08 Maret 2025]</p>
+        </div>
+    </div>
+
+
+<!-- Modal Tempe Mendoan By Bhinneka Indonesian Rsto & Cafe -->
+<div id="modal-apply" class="modal" itemscope itemtype="https://schema.org/Recipe">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 itemprop="name">Tempe Mendoan By Bhinneka Indonesian Resto & Cafe</h2>
+        <br>
+        <h3>Manfaat Tempe Mendoan</h3>
+        <ul>
+            <li><span itemprop="description">Sumber Protein: Tempe merupakan sumber protein nabati yang sangat baik, mendukung kesehatan otot dan tubuh secara keseluruhan.</span></li>
+            <li><span itemprop="description">Kaya Serat: Tempe mengandung serat yang baik untuk pencernaan dan menjaga kesehatan usus.</span></li>
+            <li><span itemprop="description">Mudah Disiapkan: Tempe mendoan adalah camilan yang cepat dan mudah untuk disiapkan, cocok untuk teman santai atau hidangan pembuka.</span></li>
+            <li><span itemprop="description">Gurih dan Renyah: Tempe mendoan memiliki tekstur renyah di luar dan lembut di dalam, memberikan sensasi yang lezat.</span></li>
+            <li><span itemprop="description">Alternatif Sehat: Tempe mendoan merupakan pilihan yang lebih sehat dibandingkan dengan camilan olahan lainnya yang digoreng.</span></li>
+        </ul>
+        <br>
+        <h3>Bahan-bahan yang Digunakan</h3>
+        <ul itemprop="ingredients">
+            <li>Tempe (potong tipis memanjang)</li>
+            <li>Tepung terigu</li>
+            <li>Air</li>
+            <li>Garam</li>
+            <li>Gula pasir</li>
+            <li>Ketumbar bubuk</li>
+            <li>Bawang putih (haluskan)</li>
+            <li>Minyak goreng (untuk menggoreng)</li>
+            <li>Daun salam (opsional)</li>
+        </ul>
+        <h3>Cara Membuat Tempe Mendoan</h3>
+        <ol itemprop="recipeInstructions">
+            <li>Siapkan tempe, lalu potong tipis memanjang agar mudah digoreng.</li>
+            <li>Campurkan tepung terigu, garam, gula pasir, ketumbar bubuk, dan bawang putih halus ke dalam wadah. Tambahkan air sedikit demi sedikit hingga adonan mencapai kekentalan yang pas (tidak terlalu cair, tidak terlalu kental).</li>
+            <li>Celupkan potongan tempe ke dalam adonan tepung hingga terbalut rata.</li>
+            <li>Panaskan minyak dalam wajan dengan api sedang, kemudian goreng tempe yang sudah dicelupkan adonan tepung hingga berwarna keemasan dan renyah. Pastikan tempe terendam minyak secara merata.</li>
+            <li>Angkat tempe mendoan yang sudah matang dan tiriskan dari minyak.</li>
+            <li>Sajikan tempe mendoan dengan sambal kecap atau sambal pedas sesuai selera.</li>
+        </ol>
+        <h3>Tips Tambahan</h3>
+        <ol>
+            <li>Untuk rasa yang lebih gurih, Anda bisa menambahkan sedikit kaldu bubuk ke dalam adonan tepung.</li>
+            <li>Tambahkan daun salam pada minyak goreng agar aroma tempe mendoan lebih harum.</li>
+            <li>Jaga suhu minyak agar tidak terlalu panas untuk menghindari tempe yang cepat gosong sebelum matang sempurna.</li>
+            <li>Tempe mendoan paling nikmat disajikan dalam keadaan hangat bersama sambal kecap atau sambal terasi.</li>
+        </ol>
+        <br>
+        <p><strong>Tempe Mendoan By Bhinneka Indonesian Resto & Cafe</strong> adalah camilan yang lezat dan bergizi, cocok untuk menemani waktu santai Anda. Dengan rasa yang gurih dan renyah, tempe mendoan akan menjadi favorit keluarga dan teman-teman Anda.</p>
+        <br />
+        <img src="https://lh3.googleusercontent.com/p/AF1QipMUeJIL6Bk5zGWgUbwQgt2ktqeaMJshY54GXOyH=s202-w152-h202-k-p-no" alt="Tempe Mendoan By Bhinneka Indonesian Resto & Cafe" width="500" itemprop="image">
+    </div>
+</div>
+
+
+<!-- Modal Nasi Goreng By Bhinneka Indonesian Resto & Cafe -->
+<div id="modal-apply1" class="modal" itemscope itemtype="https://schema.org/Recipe">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 itemprop="name">Nasi Goreng By Bhinneka Indonesian Resto & Cafe</h2>
+        <br>
+        <h3>Manfaat Nasi Goreng</h3>
+        <ul>
+            <li><span itemprop="description">Mengenyangkan: Nasi goreng merupakan makanan yang mengenyangkan dan cocok untuk makan siang atau malam.</span></li>
+            <li><span itemprop="description">Sumber Energi: Nasi goreng kaya akan karbohidrat yang dapat memberikan energi sepanjang hari.</span></li>
+            <li><span itemprop="description">Rasa Otentik: Nasi goreng khas Indonesia ini memberikan rasa yang autentik dengan bumbu yang kaya dan pedas.</span></li>
+            <li><span itemprop="description">Kaya Nutrisi: Dilengkapi dengan sayuran dan protein dari telur, ayam, atau udang yang membuatnya bergizi.</span></li>
+            <li><span itemprop="description">Praktis: Mudah disiapkan dan bisa menjadi hidangan serbaguna, baik untuk sarapan, makan siang, maupun makan malam.</span></li>
+        </ul>
+        <br>
+        <h3>Bahan-bahan yang Digunakan</h3>
+        <ul itemprop="ingredients">
+            <li>Nasi putih (sebaiknya nasi dingin)</li>
+            <li>Telur</li>
+            <li>Ayam fillet atau udang</li>
+            <li>Daun bawang</li>
+            <li>Tomat</li>
+            <li>Cabai merah dan hijau</li>
+            <li>Garlic (bawang putih)</li>
+            <li>Garam dan merica</li>
+            <li>Saus tiram</li>
+            <li>Kecap manis</li>
+            <li>Minyak goreng</li>
+            <li>Daun ketumbar (opsional)</li>
+        </ul>
+        <h3>Cara Membuat Nasi Goreng</h3>
+        <ol itemprop="recipeInstructions">
+            <li>Panaskan minyak di wajan, lalu tumis bawang putih dan cabai hingga harum.</li>
+            <li>Masukkan ayam atau udang, masak hingga matang.</li>
+            <li>Tambah telur, orak-arik hingga telur setengah matang.</li>
+            <li>Masukkan nasi dingin, aduk rata dengan bumbu.</li>
+            <li>Tambahkan saus tiram, kecap manis, garam, dan merica. Aduk rata.</li>
+            <li>Tambahkan daun bawang dan tomat, masak hingga rata dan nasi goreng matang sempurna.</li>
+            <li>Nasi goreng siap disajikan dengan taburan daun ketumbar dan acar mentimun sebagai pelengkap.</li>
+        </ol>
+        <h3>Tips Tambahan</h3>
+        <ol>
+            <li>Gunakan nasi yang sudah dingin untuk tekstur nasi goreng yang lebih baik.</li>
+            <li>Tambahkan kerupuk sebagai pelengkap untuk rasa yang lebih nikmat.</li>
+            <li>Jika suka pedas, tambahkan sambal atau cabai lebih banyak.</li>
+            <li>Untuk variasi, Anda bisa menambahkan sayuran seperti wortel atau kacang polong.</li>
+        </ol>
+        <br>
+        <p><strong>Nasi Goreng By Bhinneka Indonesian Resto & Cafe</strong> adalah hidangan ikonik Indonesia yang penuh cita rasa. Cocok untuk segala suasana, baik sebagai hidangan utama atau menu yang mengenyangkan. Selamat menikmati!</p>
+        <br />
+        <img src="https://lh3.googleusercontent.com/p/AF1QipPvT_3HHaN1Tryerk5ksxaVYSEQDHnrcIlhDfAo=s202-w152-h202-k-p-no" alt="Nasi Goreng By Bhinneka Indonesian Resto & Cafe" width="500" itemprop="image">
+    </div>
+</div>
+
+
+<!-- Modal Nasi Liwet By Bhinneka Indonesian Resto & Cafe -->
+<div id="modal-apply2" class="modal" itemscope itemtype="https://schema.org/Recipe">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 itemprop="name">Nasi Liwet By Bhinneka Indonesian Resto & Cafe</h2>
+        <br>
+        <h3>Manfaat Nasi Liwet</h3>
+        <ul>
+            <li><span itemprop="description">Nikmat dan Mengenyangkan: Nasi liwet memberikan rasa yang gurih dan dapat mengenyangkan perut dengan sempurna.</span></li>
+            <li><span itemprop="description">Rasa Autentik: Nasi liwet khas Indonesia ini memiliki cita rasa yang kaya, terutama berkat penggunaan rempah-rempah tradisional.</span></li>
+            <li><span itemprop="description">Sumber Energi: Nasi liwet mengandung karbohidrat yang memberikan energi sepanjang hari.</span></li>
+            <li><span itemprop="description">Kaya Protein: Dilengkapi dengan ayam, ikan, atau tahu, nasi liwet juga kaya akan protein.</span></li>
+            <li><span itemprop="description">Mudah Disesuaikan: Nasi liwet bisa disajikan dengan berbagai pilihan lauk yang dapat disesuaikan dengan selera.</span></li>
+        </ul>
+        <br>
+        <h3>Bahan-bahan yang Digunakan</h3>
+        <ul itemprop="ingredients">
+            <li>Nasi putih</li>
+            <li>Ayam atau ikan</li>
+            <li>Daun salam</li>
+            <li>Sereh</li>
+            <li>Lengkuas</li>
+            <li>Garam</li>
+            <li>Minyak goreng</li>
+            <li>Daun pandan</li>
+            <li>Kaldu ayam</li>
+            <li>Bawang merah dan bawang putih</li>
+            <li>Cabai merah (opsional)</li>
+            <li>Tomat (opsional)</li>
+        </ul>
+        <h3>Cara Membuat Nasi Liwet</h3>
+        <ol itemprop="recipeInstructions">
+            <li>Cuci beras hingga bersih, lalu tiriskan.</li>
+            <li>Panaskan minyak di wajan, tumis bawang merah, bawang putih, cabai, sereh, daun salam, dan lengkuas hingga harum.</li>
+            <li>Masukkan ayam atau ikan, aduk rata dan masak hingga setengah matang.</li>
+            <li>Masukkan beras ke dalam wajan, aduk rata dengan bumbu dan bahan lainnya.</li>
+            <li>Tambahkan air secukupnya dan kaldu ayam. Masak nasi dengan api kecil hingga air meresap dan nasi matang sempurna.</li>
+            <li>Tambahkan daun pandan untuk aroma khas, aduk rata dan biarkan nasi matang selama beberapa menit lagi.</li>
+            <li>Nasi liwet siap disajikan, dapat ditambahkan dengan sambal atau kerupuk sebagai pelengkap.</li>
+        </ol>
+        <h3>Tips Tambahan</h3>
+        <ol>
+            <li>Gunakan kaldu ayam untuk rasa yang lebih gurih.</li>
+            <li>Tambahkan sayuran seperti kacang panjang atau wortel untuk variasi rasa dan tekstur.</li>
+            <li>Untuk versi pedas, tambahkan lebih banyak cabai sesuai selera.</li>
+            <li>Jangan terlalu banyak menambahkan air agar nasi tidak terlalu lembek, cukup secukupnya.</li>
+        </ol>
+        <br>
+        <p><strong>Nasi Liwet By Bhinneka Indonesian Resto & Cafe</strong> adalah hidangan yang penuh rasa, cocok untuk dinikmati bersama keluarga atau teman-teman. Dengan bumbu rempah yang khas, nasi liwet ini pasti memanjakan lidah Anda. Selamat menikmati!</p>
+        <br />
+        <img src="https://lh3.googleusercontent.com/p/AF1QipPk4IQRpZ40K_NU2jzfiF9us_xjXf2_3T6MsjUP=s202-w152-h202-k-p-no" alt="Nasi Liwet By Bhinneka Indonesian Resto & Cafe" width="500" itemprop="image">
+    </div>
+</div>
+
+
+<!-- Modal Nasi Bakul By Bhinneka Indonesian Resto & Cafe -->
+<div id="modal-apply3" class="modal" itemscope itemtype="https://schema.org/Recipe">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 itemprop="name">Nasi Bakul By Bhinneka Indonesian Resto & Cafe</h2>
+        <br>
+        <h3>Manfaat Nasi Bakul</h3>
+        <ul>
+            <li><span itemprop="description">Nikmat dan Mengenyangkan: Nasi bakul adalah hidangan tradisional yang menyenangkan dan dapat mengenyangkan perut dengan sempurna.</span></li>
+            <li><span itemprop="description">Sederhana namun Lezat: Nasi bakul dibuat dengan bahan sederhana namun tetap kaya rasa berkat bumbu tradisional yang khas.</span></li>
+            <li><span itemprop="description">Sumber Energi: Mengandung karbohidrat yang baik untuk memberikan energi sepanjang hari.</span></li>
+            <li><span itemprop="description">Kaya Protein: Biasanya disajikan dengan lauk pauk seperti ayam, telur, atau ikan, memberikan tambahan protein.</span></li>
+            <li><span itemprop="description">Praktis dan Mudah Disajikan: Cocok untuk berbagai kesempatan, baik makan siang, makan malam, atau acara kumpul bersama keluarga.</span></li>
+        </ul>
+        <br>
+        <h3>Bahan-bahan yang Digunakan</h3>
+        <ul itemprop="ingredients">
+            <li>Nasi putih</li>
+            <li>Ayam goreng atau ayam bakar</li>
+            <li>Telur rebus</li>
+            <li>Tempe goreng</li>
+            <li>Kerupuk</li>
+            <li>Daun pisang (untuk membungkus)</li>
+            <li>Daun salam</li>
+            <li>Sereh</li>
+            <li>Bawang merah dan bawang putih</li>
+            <li>Cabai merah dan cabai hijau</li>
+            <li>Garam dan merica</li>
+            <li>Sambal (opsional)</li>
+        </ul>
+        <h3>Cara Membuat Nasi Bakul</h3>
+        <ol itemprop="recipeInstructions">
+            <li>Siapkan daun pisang untuk membungkus nasi. Bersihkan dan panaskan daun pisang sebentar di atas api agar lebih lentur.</li>
+            <li>Masak nasi putih seperti biasa dan tambahkan sedikit garam untuk memberikan rasa.</li>
+            <li>Siapkan lauk pauk seperti ayam goreng, telur rebus, tempe goreng, dan kerupuk.</li>
+            <li>Tumis bawang merah dan bawang putih hingga harum, lalu tambahkan cabai merah dan hijau. Tumis sebentar.</li>
+            <li>Bungkus nasi, ayam, telur, tempe, dan sambal dalam daun pisang dengan rapat sehingga membentuk bakul kecil.</li>
+            <li>Biarkan sebentar agar aroma daun pisang meresap ke dalam nasi dan lauk.</li>
+            <li>Nasi Bakul siap disajikan, biasanya dinikmati dengan sambal dan kerupuk di sisi.</li>
+        </ol>
+        <h3>Tips Tambahan</h3>
+        <ol>
+            <li>Gunakan ayam yang sudah dibumbui terlebih dahulu agar lebih lezat.</li>
+            <li>Anda dapat menambahkan sayuran seperti lalapan segar untuk variasi dan kesegaran.</li>
+            <li>Untuk versi pedas, pastikan sambal ditambahkan sesuai dengan selera.</li>
+            <li>Jika tidak ada daun pisang, Anda bisa menggunakan kertas pembungkus atau wadah lain yang praktis.</li>
+        </ol>
+        <br>
+        <p><strong>Nasi Bakul By Bhinneka Indonesian Resto & Cafe</strong> adalah hidangan yang memberikan nuansa tradisional dengan rasa yang autentik. Nikmati kelezatannya kapan saja, baik untuk makan siang, makan malam, atau acara bersama orang tercinta.</p>
+        <br />
+        <img src="https://lh3.googleusercontent.com/p/AF1QipNhHinssk_0UcKgjgbxILPqmsLThW0PxDy07No=s202-w152-h202-k-p-no" alt="Nasi Bakul By Bhinneka Indonesian Resto & Cafe" width="500" itemprop="image">
+    </div>
+</div>
+
+
+<!-- Modal Bakwan Jagung By Bhinneka Indonesian Resto & Cafe -->
+<div id="modal-apply4" class="modal" itemscope itemtype="https://schema.org/Recipe">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 itemprop="name">Bakwan Jagung By Bhinneka Indonesian Resto & Cafe</h2>
+        <br>
+        <h3>Manfaat Bakwan Jagung</h3>
+        <ul>
+            <li><span itemprop="description">Lezat dan Renyah: Bakwan jagung memiliki tekstur renyah di luar dan lembut di dalam, membuatnya sangat menggugah selera.</span></li>
+            <li><span itemprop="description">Sumber Vitamin: Jagung adalah sumber yang baik dari berbagai vitamin, seperti vitamin A, B, dan C.</span></li>
+            <li><span itemprop="description">Kaya Serat: Jagung juga kaya akan serat yang baik untuk pencernaan.</span></li>
+            <li><span itemprop="description">Mudah Disajikan: Bakwan jagung cocok disajikan sebagai camilan atau pendamping makan utama.</span></li>
+            <li><span itemprop="description">Praktis: Camilan yang mudah dibuat dengan bahan-bahan yang mudah ditemukan di pasar.</span></li>
+        </ul>
+        <br>
+        <h3>Bahan-bahan yang Digunakan</h3>
+        <ul itemprop="ingredients">
+            <li>Jagung manis (dipipil)</li>
+            <li>Tepung terigu</li>
+            <li>Telur</li>
+            <li>Bawang putih</li>
+            <li>Bawang merah</li>
+            <li>Daun seledri</li>
+            <li>Daun bawang</li>
+            <li>Garam dan merica</li>
+            <li>Air</li>
+            <li>Minyak goreng (untuk menggoreng)</li>
+        </ul>
+        <h3>Cara Membuat Bakwan Jagung</h3>
+        <ol itemprop="recipeInstructions">
+            <li>Haluskan bawang merah dan bawang putih, lalu campurkan dengan jagung pipil.</li>
+            <li>Tambahkan tepung terigu, telur, daun seledri, daun bawang, garam, dan merica. Aduk rata hingga adonan tercampur sempurna.</li>
+            <li>Tambahkan sedikit air jika adonan terlalu kental, pastikan adonan bisa dipulung namun tidak terlalu cair.</li>
+            <li>Panaskan minyak goreng dalam wajan dengan api sedang.</li>
+            <li>Ambil satu sendok makan adonan dan bentuk bulat pipih, lalu goreng hingga berwarna kecoklatan dan renyah.</li>
+            <li>Angkat dan tiriskan bakwan jagung dari minyak. Sajikan hangat dengan sambal atau saus sesuai selera.</li>
+        </ol>
+        <h3>Tips Tambahan</h3>
+        <ol>
+            <li>Untuk rasa yang lebih gurih, Anda bisa menambahkan sedikit kaldu bubuk pada adonan.</li>
+            <li>Jika ingin bakwan lebih renyah, tambahkan sedikit tepung beras ke dalam adonan.</li>
+            <li>Bakwan jagung juga bisa disajikan dengan tambahan cabai rawit sebagai pelengkap sambal.</li>
+            <li>Pastikan minyak cukup panas saat menggoreng agar bakwan jagung tidak menyerap terlalu banyak minyak.</li>
+        </ol>
+        <br>
+        <p><strong>Bakwan Jagung By Bhinneka Indonesian Resto & Cafe</strong> adalah camilan lezat yang penuh rasa. Cocok untuk menemani waktu santai Anda, baik sebagai teman makan siang, atau camilan sore yang nikmat.</p>
+        <br />
+        <img src="https://lh3.googleusercontent.com/p/AF1QipNra4CdZWMzeY0oxLOjLInhkBaAnDV1hRPMCzI1=s202-w152-h202-k-p-no" alt="Bakwan Jagung By Bhinneka Indonesian Resto & Cafe" width="500" itemprop="image">
+    </div>
+</div>
+
+
+<!-- Modal Ayam Betutu By Bhinneka Indonesian Resto & Cafe -->
+<div id="modal-apply5" class="modal" itemscope itemtype="https://schema.org/Recipe">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 itemprop="name">Ayam Betutu By Bhinneka Indonesian Resto & Cafe</h2>
+        <br>
+        <h3>Manfaat Ayam Betutu</h3>
+        <ul>
+            <li><span itemprop="description">Rasa Kaya Rempah: Ayam Betutu memiliki cita rasa yang kaya berkat penggunaan bumbu rempah khas Bali yang autentik.</span></li>
+            <li><span itemprop="description">Tinggi Protein: Ayam betutu adalah sumber protein yang baik, memberikan nutrisi untuk tubuh.</span></li>
+            <li><span itemprop="description">Menghangatkan Tubuh: Karena dimasak dengan bumbu rempah yang melimpah, ayam betutu memberikan sensasi hangat yang menyegarkan.</span></li>
+            <li><span itemprop="description">Kaya Akan Vitamin: Bumbu rempah yang digunakan, seperti kunyit, lengkuas, dan serai, mengandung banyak vitamin dan mineral yang baik untuk kesehatan.</span></li>
+            <li><span itemprop="description">Lezat dan Mengenyangkan: Dengan ayam yang empuk dan bumbu yang meresap, Ayam Betutu adalah hidangan yang memuaskan dan mengenyangkan.</span></li>
+        </ul>
+        <br>
+        <h3>Bahan-bahan yang Digunakan</h3>
+        <ul itemprop="ingredients">
+            <li>Ayam utuh</li>
+            <li>Lemongrass (serai)</li>
+            <li>Daun salam</li>
+            <li>Daun jeruk purut</li>
+            <li>Lengkuas</li>
+            <li>Kunyit</li>
+            <li>Jahe</li>
+            <li>Bawang merah</li>
+            <li>Bawang putih</li>
+            <li>Cabai merah</li>
+            <li>Tomat</li>
+            <li>Garam dan merica</li>
+            <li>Santan kelapa</li>
+            <li>Minyak goreng</li>
+            <li>Daun pisang (untuk membungkus)</li>
+        </ul>
+        <h3>Cara Membuat Ayam Betutu</h3>
+        <ol itemprop="recipeInstructions">
+            <li>Haluskan bawang merah, bawang putih, cabai merah, kunyit, jahe, dan lengkuas hingga menjadi pasta halus.</li>
+            <li>Panaskan sedikit minyak di wajan, tumis bumbu halus hingga harum.</li>
+            <li>Tambahkan serai, daun salam, daun jeruk purut, dan tomat yang sudah dipotong-potong. Aduk rata.</li>
+            <li>Masukkan ayam utuh ke dalam wajan, baluri ayam dengan bumbu tersebut dan masak selama 10-15 menit agar bumbu meresap.</li>
+            <li>Tambahkan santan kelapa, garam, dan merica, aduk rata, lalu masak ayam hingga empuk dan bumbu meresap.</li>
+            <li>Bungkus ayam dengan daun pisang dan kukus selama 1,5 hingga 2 jam hingga ayam betutu matang sempurna.</li>
+            <li>Angkat ayam betutu dari kukusan dan siap untuk disajikan dengan nasi hangat dan sambal.</li>
+        </ol>
+        <h3>Tips Tambahan</h3>
+        <ol>
+            <li>Jika tidak ada daun pisang, Anda bisa membungkus ayam dengan aluminium foil sebagai pengganti.</li>
+            <li>Untuk rasa yang lebih pedas, tambahkan lebih banyak cabai merah ke dalam bumbu halus.</li>
+            <li>Jika ingin ayam betutu lebih gurih, tambahkan sedikit kaldu bubuk ke dalam bumbu.</li>
+            <li>Pastikan ayam dimasak dengan api kecil saat merebus agar bumbu meresap sempurna ke dalam ayam.</li>
+        </ol>
+        <br>
+        <p><strong>Ayam Betutu By Bhinneka Indonesian Resto & Cafe</strong> adalah hidangan khas Bali yang penuh dengan bumbu rempah yang kaya. Cocok dinikmati bersama keluarga atau teman-teman, menjadikannya pilihan yang sempurna untuk makan siang atau makan malam.</p>
+        <br />
+        <img src="https://lh3.googleusercontent.com/p/AF1QipP4nxhoZjl5GKQv4cEdnssReAOy6TCnHHmr6uM=s202-w152-h202-k-p-no" alt="Ayam Betutu By Bhinneka Indonesian Resto & Cafe" width="500" itemprop="image">
+    </div>
+</div>
+
+
+<!-- Modal Sate Maranggi By Bhinneka Indonesian Resto & Cafe -->
+<div id="modal-apply6" class="modal" itemscope itemtype="https://schema.org/Recipe">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 itemprop="name">Sate Maranggi By Bhinneka Indonesian Resto & Cafe</h2>
+        <br>
+        <h3>Manfaat Sate Maranggi</h3>
+        <ul>
+            <li><span itemprop="description">Nikmat dan Gurih: Sate Maranggi memiliki rasa yang kaya dengan bumbu kecap dan rempah-rempah yang khas.</span></li>
+            <li><span itemprop="description">Sumber Protein: Daging sapi yang digunakan mengandung protein yang baik untuk tubuh.</span></li>
+            <li><span itemprop="description">Memuaskan Selera: Sate Maranggi memiliki cita rasa yang kaya dan cocok untuk makan bersama keluarga atau teman.</span></li>
+            <li><span itemprop="description">Alternatif Sehat: Daging yang dipanggang membuat sate ini lebih sehat dibandingkan dengan yang digoreng.</span></li>
+            <li><span itemprop="description">Mudah Disiapkan: Proses memasak sate Maranggi tidak terlalu rumit dan bisa disesuaikan dengan selera.</span></li>
+        </ul>
+        <br>
+        <h3>Bahan-bahan yang Digunakan</h3>
+        <ul itemprop="ingredients">
+            <li>Daging sapi (potong dadu)</li>
+            <li>Daun jeruk purut</li>
+            <li>Sereh (serai)</li>
+            <li>Bawang putih</li>
+            <li>Bawang merah</li>
+            <li>Kecap manis</li>
+            <li>Gula merah</li>
+            <li>Air asam jawa</li>
+            <li>Garam dan merica</li>
+            <li>Minyak goreng</li>
+            <li>Kayu tusuk sate</li>
+        </ul>
+        <h3>Cara Membuat Sate Maranggi</h3>
+        <ol itemprop="recipeInstructions">
+            <li>Haluskan bawang merah, bawang putih, sereh, dan daun jeruk purut menggunakan blender atau cobek hingga menjadi bumbu halus.</li>
+            <li>Campurkan bumbu halus dengan kecap manis, gula merah, air asam jawa, garam, dan merica. Aduk rata hingga bumbu tercampur dengan baik.</li>
+            <li>Masukkan potongan daging sapi ke dalam bumbu marinade dan diamkan selama minimal 1-2 jam agar bumbu meresap.</li>
+            <li>Setelah daging termarinasi, tusuk potongan daging menggunakan kayu tusuk sate secara rapat.</li>
+            <li>Panaskan pemanggang atau panggangan, kemudian panggang sate di atas api sedang hingga matang dan berwarna kecoklatan. Sering-seringlah membolak-balik sate agar matang merata.</li>
+            <li>Angkat sate Maranggi dari panggangan dan sajikan dengan nasi atau lontong, serta sambal kacang atau sambal kecap sesuai selera.</li>
+        </ol>
+        <h3>Tips Tambahan</h3>
+        <ol>
+            <li>Untuk hasil yang lebih empuk, gunakan daging sapi yang memiliki sedikit lemak.</li>
+            <li>Marinasi daging lebih lama akan membuat rasa bumbu lebih meresap dan meningkatkan kelezatan sate Maranggi.</li>
+            <li>Tambahkan sambal kecap dengan irisan cabai untuk memberikan rasa pedas yang segar.</li>
+            <li>Anda bisa mengganti daging sapi dengan daging ayam atau kambing sesuai selera.</li>
+        </ol>
+        <br>
+        <p><strong>Sate Maranggi By Bhinneka Indonesian Resto & Cafe</strong> adalah hidangan khas yang penuh rasa dan kelezatan. Nikmati sate ini dengan nasi atau lontong, membuat hidangan ini sempurna untuk acara makan bersama orang tercinta.</p>
+        <br />
+        <img src="https://lh3.googleusercontent.com/p/AF1QipMZvRVTWUdCRsInyRmpxaVu0Lx9kw_EQlWEqphd=s202-w152-h202-k-p-no" alt="Sate Maranggi By Bhinneka Indonesian Resto & Cafe" width="500" itemprop="image">
+    </div>
+</div>
+
+
+
+<script>
+        // Modal functionality for Header
+        function showModal(modalId) {
+            const modal = document.getElementById(modalId);
+            const closeModal = modal.querySelector('.close');
+            modal.style.display = 'block';
+
+            closeModal.addEventListener('click', () => {
+                modal.style.display = 'none';
+            });
+
+            window.onclick = function(event) {
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                }
+            };
+        }
+
+        // Apply Modals
+       document.getElementById('applyBtn').addEventListener('click', () => showModal('modal-apply'));
+
+
+       // Apply Modals
+       document.getElementById('applyBtn1').addEventListener('click', () => showModal('modal-apply1'));
+       document.getElementById('applyBtn2').addEventListener('click', () => showModal('modal-apply2'));
+       document.getElementById('applyBtn3').addEventListener('click', () => showModal('modal-apply3'));
+       document.getElementById('applyBtn4').addEventListener('click', () => showModal('modal-apply4'));
+       document.getElementById('applyBtn5').addEventListener('click', () => showModal('modal-apply5'));
+       document.getElementById('applyBtn6').addEventListener('click', () => showModal('modal-apply6'));
+
+        // Header Modals
+        document.getElementById('aboutBtn').addEventListener('click', () => showModal('modal-about'));
+        document.getElementById('servicesBtn').addEventListener('click', () => showModal('modal-services'));
+        document.getElementById('contactBtn').addEventListener('click', () => showModal('modal-contact'));
+
+        // Footer Modals
+        document.getElementById('aboutFooterBtn').addEventListener('click', () => showModal('modal-footer-about'));
+        document.getElementById('privacyFooterBtn').addEventListener('click', () => showModal('modal-footer-privacy'));
+        document.getElementById('termsFooterBtn').addEventListener('click', () => showModal('modal-footer-terms'));
+    </script>
+
+  <script>
+    // JavaScript to handle the scroll-in animation
+    window.addEventListener('scroll', function () {
+      const elements = document.querySelectorAll('.hero h1, .hero p');
+      elements.forEach(element => {
+        if (element.getBoundingClientRect().top <= window.innerHeight - 100) {
+          element.classList.add('visible');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
